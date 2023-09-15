@@ -3993,8 +3993,8 @@ customXrayInstall() {
 		updateRedirectNginxConf
 		handleNginx start
 
-		# Install v2ray
-		installXray 8
+		# Install xray
+		installXray 8 false
 		installXrayService 9
 		initXrayConfig custom 10
 		cleanUp v2rayDel
@@ -4093,7 +4093,7 @@ xrayCoreInstall() {
 	randomPathFunction 5
 	# Installing Xray
 	handleV2Ray stop
-	installXray 6
+	installXray 6 false
 	installXrayService 7
 	customCDNIP 8
 	initXrayConfig all 9
